@@ -40,11 +40,6 @@ echo "============================="
 echo "安装powerline"
 sudo pacman -S ttf-dejavu-sans-mono-powerline python-powerline powerline powerline-common
 
-echo "============================"
-echo "安装开源驱动"
-sudo mhwd -a pci nonfree 0300
-
-
 echo "以下操作请设置好代理后再运行"
 res = N
 until [$res == y] 
@@ -75,6 +70,9 @@ echo "============================"
 echo "安装spacevim"
 curl -sLf https://spacevim.org/cn/install.sh | bash
 
+echo "============================"
+echo "安装jetbrains-toolbox和JBR运行环境"
+ys jetbrains-toolbox jetbrains-jre 
 
 # ....
 echo "============================="
