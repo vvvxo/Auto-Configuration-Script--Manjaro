@@ -93,6 +93,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ys="yay -S"
 alias yr="yay -R"
+alias yrc="yay -Rsc"
 alias ps="sudo pacman -S"
 alias pr="sudo pacman -R"
 alias pu="sudo pacman -U"
