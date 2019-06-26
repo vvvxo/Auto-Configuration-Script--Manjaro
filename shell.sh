@@ -66,6 +66,11 @@ echo "============================"
 echo "安装jetbrains-toolbox和JBR运行环境"
 yay -S --noconfirm jetbrains-toolbox jetbrains-jre 
 
+echo "============================"
+echo "安装字体"
+yay -S --noconfirm ttf-sarasa-gothic powerline-fonts
+
+
 # ....
 echo "============================="
 echo "Reboot now? Y/N"
