@@ -6,7 +6,7 @@ sudo pacman-mirrors -i -c China -m rank
 
 sudo pacman-optimize && sync
 
-sudo echo -e "\n[archlinuxcn]\nSigLevel = Optional TrustedOnly\nServer = https://mirrors.ustc.edu.cn/archlinuxcn/$arch" >> /etc/pacman.conf
+sudo echo -e "\n[archlinuxcn]\nSigLevel = Optional TrustedOnly\nServer = https://mirrors.cloud.tencent.com/archlinuxcn/$arch" >> /etc/pacman.conf
 
 sudo pacman -Syyu && sudo pacman -S --noconfirm archlinuxcn-keyring
 
