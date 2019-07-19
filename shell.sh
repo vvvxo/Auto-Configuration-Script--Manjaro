@@ -70,6 +70,31 @@ echo "============================"
 echo "安装字体"
 yay -S --noconfirm ttf-sarasa-gothic powerline-fonts
 
+echo "============================"
+echo "安装snap"
+yay -S --noconfirm snap
+
+sudo snap install mathpix-snipping-tool
+
+
+echo "============================"
+echo "安装wine及依赖"
+yay -S --noconfirm wine winetricks wine-gecko wine-mono
+sudo winetricks --self-update
+
+winetricks corefonts colorprofile
+winetricks fontfix fontsmooth-gray fontsmooth-rgb fontsmooth-bgr
+winetricks gdiplus
+winetricks d3dx9
+winetricks riched20 riched30
+winetricks mfc40 mfc42
+winetricks vcrun6 vb6run vcrun2003 vcrun2005 vcrun2008
+winetricks msxml3 msxml4 msxml6
+winetricks wsh57
+
+
+
+
 
 # ....
 echo "============================="
